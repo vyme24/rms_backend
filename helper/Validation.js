@@ -37,7 +37,7 @@ const login = (req) => {
     
         firstError(req)
     
-        if(!req.body.email || req.body.password ){
+        if(!req.body.email || !req.body.password ){
           throw new Error("required fields missing")
         }
     
